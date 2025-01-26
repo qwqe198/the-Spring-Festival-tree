@@ -398,9 +398,9 @@ addLayer("d", {
          effect() {
         return player.d.points.add(2).log(10) },
  effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"×" },
-      unlocked() {return hasChallenge("x", 11)},
+   
       unlocked() {return inChallenge("x", 11)},
-      unlocked() {return hasChallenge("x", 11)},
+
      },  
     42:{ title: "龙→除夕点",
       description: "龙增加除夕点获取",
@@ -408,9 +408,9 @@ addLayer("d", {
          effect() {
         return player.d.points.add(2).log(10).pow(22) },
  effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"×" },
-      unlocked() {return hasChallenge("x", 11)},
+ 
       unlocked() {return inChallenge("x", 11)}, 
-      unlocked() {return hasChallenge("x", 11)},
+
      },   
     43:{ title: "龙^春节点",
       description: "龙增加春节点获取指数",
@@ -418,9 +418,9 @@ addLayer("d", {
          effect() {
         return player.d.points.add(2).log(10).add(2).log(10).add(2).pow(0.419) },
  effectDisplay() { return "^"+format(upgradeEffect(this.layer, this.id)) },
-      unlocked() {return hasChallenge("x", 11)},
+    
       unlocked() {return inChallenge("x", 11)}, 
-      unlocked() {return hasChallenge("x", 11)},
+   
      },   
     },
     clickables: {
@@ -632,50 +632,50 @@ addLayer("y", {
     requirementDescription: "1秒→1e926秒(时间膨胀)",
     effectDescription() { return "秒获取x2085"},
     done() { return player.y.points.gte("1e926") },
-      unlocked() {return hasChallenge("x", 12)},
+   
       unlocked() {return inChallenge("x", 12)},  
-      unlocked() {return hasChallenge("x", 12)},
+   
     
    },
       8: {
     requirementDescription: "1分钟→1e930秒(这不是专业树)",
     effectDescription() { return "秒获取x114514"},
     done() { return player.y.points.gte("1e930") },
-      unlocked() {return hasChallenge("x", 12)},
+
       unlocked() {return inChallenge("x", 12)},  
-      unlocked() {return hasChallenge("x", 12)},  
+
       },
       9: {
     requirementDescription: "1小时→1e934秒(不错)",
     effectDescription() { return "秒获取x1e69"},
     done() { return player.y.points.gte("1e934") },
-      unlocked() {return hasChallenge("x", 12)},
+
       unlocked() {return inChallenge("x", 12)},   
-      unlocked() {return hasChallenge("x", 12)},
+
    }, 
      10: {
     requirementDescription: "1天→1e971秒(不错^2)",
     effectDescription() { return "秒获取x1e420"},
     done() { return player.y.points.gte("1e971") },
-      unlocked() {return hasChallenge("x", 12)},
+
       unlocked() {return inChallenge("x", 12)},   
-      unlocked() {return hasChallenge("x", 12)},
+
    },   
   11: {
     requirementDescription: "1月→1e1190秒(为什么现在才有这个)",
     effectDescription() { return "秒获取^1.3229，保留每秒获得1e5%重置时可以获得的炸档点"},
     done() { return player.y.points.gte("1e1190") },
-      unlocked() {return hasChallenge("x", 12)},
+ 
       unlocked() {return inChallenge("x", 12)},   
-      unlocked() {return hasChallenge("x", 12)},
+
    },    
  12: {
     requirementDescription: "1年→1e1405秒(咕咕咕)",
     effectDescription() { return "咕咕咕"},
     done() { return player.y.points.gte("1e1405") },
-      unlocked() {return hasChallenge("x", 12)},
+   
       unlocked() {return inChallenge("x", 12)},   
-      unlocked() {return hasChallenge("x", 12)},
+
    },      
   },
   clickables: {
